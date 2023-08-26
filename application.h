@@ -12,6 +12,7 @@
 #include "MCAL/GPIO/GPIO.h"
 #include "ECU/LED/ECU_LED.h"
 #include "ECU/BUTTON/ecu_button.h"
+#include "ECU/Relay/ecu_Relay.h"
 
 /* Section: Macro Declarations */
 
