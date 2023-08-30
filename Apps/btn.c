@@ -26,28 +26,17 @@
 //  .button_state = BUTTON_RELEASED
 //};
 //        
+//button_t btn1_active_low = {
+//  .button_pin.port = PORTB_INDEX,
+//  .button_pin.pin  = GPIO_PIN1,
+//  .button_pin.direction = GPIO_DIR_INPUT,
+//  .button_pin.logic = GPIO_LOW,
+//  .button_active_t = BUTTON_ACTIVE_LOW,
+//  .button_state = BUTTON_RELEASED
+//};
 
 relay_t relay_1 = { .relay_port = PORTC_INDEX , .relay_pin = GPIO_PIN0 , .relay_state = RELAY_OFF };
 relay_t relay_2 = { .relay_port = PORTC_INDEX , .relay_pin = GPIO_PIN1 , .relay_state = RELAY_OFF };
-dc_motor_t Dc_motor_1 = {
-  .dc_motor[0].dc_motor_port = PORTC_INDEX,
-  .dc_motor[0].dc_motor_pin = GPIO_PIN0,
-  .dc_motor[0].dc_motor_status = DC_MOTOR_OFF,
-  
-  .dc_motor[1].dc_motor_port = PORTC_INDEX,
-  .dc_motor[1].dc_motor_pin = GPIO_PIN1,
-  .dc_motor[1].dc_motor_status = DC_MOTOR_OFF,
-};
-
-dc_motor_t Dc_motor_2 = {
-  .dc_motor[0].dc_motor_port = PORTC_INDEX,
-  .dc_motor[0].dc_motor_pin = GPIO_PIN2,
-  .dc_motor[0].dc_motor_status = DC_MOTOR_OFF,
-  
-  .dc_motor[1].dc_motor_port = PORTC_INDEX,
-  .dc_motor[1].dc_motor_pin = GPIO_PIN3,
-  .dc_motor[1].dc_motor_status = DC_MOTOR_OFF,
-};
 
 
 Std_ReturnType ret = E_NOT_OK;
@@ -73,30 +62,20 @@ int main(){
     application_intialize();
     while(1)
     {
-        ret = dc_motor_Move_Right(& Dc_motor_1);
-        ret = dc_motor_Move_Left(& Dc_motor_2);
-        __delay_ms(1000);
-        ret = dc_motor_Move_Left(& Dc_motor_1);
-        ret = dc_motor_Move_Right(& Dc_motor_2);
-        __delay_ms(1000);
-        ret = dc_motor_Move_Stop(&Dc_motor_1);
-        ret = dc_motor_Move_Stop(&Dc_motor_2);
-        __delay_ms(1000);
-
-
+        ret = relay_ON( &relay_1 );
+        ret = relay_OFF( &relay_2 );
+        __delay_ms(3000);
+        ret = relay_OFF( &relay_1 );
+        ret = relay_ON( &relay_2 );
+        __delay_ms(3000);
     }
     return (EXIT_SUCCESS);
 }
 
 void application_intialize(void){
     Std_ReturnType ret = E_NOT_OK;
-    
     ret = relay_init(&relay_1); 
     ret = relay_init(&relay_2); 
-    
-    ret = dc_motor_init(& Dc_motor_1);
-    ret = dc_motor_init(& Dc_motor_2);
-    
 //    ret = button_init(&btn1_active_high);
 //    ret = button_init(&btn1_active_low);
 //    
