@@ -23,14 +23,15 @@
 /* Section: Macro Functions Declarations */
 
 /* Section: Data Type Declarations */
-typedef struct{
+/*typedef struct{
     uint8 dc_motor_port   : 4;
     uint8 dc_motor_pin    : 3;
     uint8 dc_motor_status : 1;
 }dc_motor_pins_t;
+*/
 
 typedef struct{
-    dc_motor_pins_t dc_motor[2];
+    PIN_config_t dc_motor_PIN[2];
 }dc_motor_t;
 
 /* Section: Function Declarations */
