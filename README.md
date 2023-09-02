@@ -31,7 +31,7 @@ This layer contains Electronic Control Units for various hardware components.
 ## Contributing
 Contributions to Employees_Data are welcome!
 
-# License
-licensed under the [LICENSE](LICENSE) 
+#### License
+licensed under the MIT License.
 
 
