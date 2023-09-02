@@ -28,9 +28,10 @@ This layer contains Electronic Control Units for various hardware components.
 - [Apps](Apps/): Directory containing application-specific modules.
 
 
-## License
+## Contributing
+Contributions to Employees_Data are welcome!
+
+# License
 licensed under the [LICENSE](LICENSE) 
 
-## Contributors
-- List contributors and maintainers here.
 
