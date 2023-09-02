@@ -1,9 +1,9 @@
-# PIC18_F4620
+# *PIC18_F4620*
  my PIC18F4620 drivers journey. Effortlessly integrate microcontroller peripherals. Simplify development with clear documentation and modular code for smooth hardware interaction."
 
 ## Layered Architecture
 
-The project is structured into the following layers:
+The driver is structured into the following layers:
 
 ### [MCAL (Microcontroller Abstraction Layer)](MCAL/)
 
