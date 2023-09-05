@@ -7,13 +7,9 @@ The driver is structured into the following layers:
 
 ### [MCAL (Microcontroller Abstraction Layer)](MCAL/)
 
-This layer provides low-level hardware abstraction for the PIC18 microcontroller.
-
 - [GPIO](MCAL/GPIO/): General-Purpose Input/Output module.
 
 ### [ECU (Electronic Control Unit) Layer](ECU/)
-
-This layer contains Electronic Control Units for various hardware components.
 
 - [BUTTON](ECU/BUTTON/): Button control module.
 - [DC_MOTOR](ECU/DC_MOTOR/): DC motor control module.
