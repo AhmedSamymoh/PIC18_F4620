@@ -1,12 +1,12 @@
-/* 
- * File:   application.c
- * Author: AhmedElnozahy
- *
- * Created on August 3, 2023, 4:54 PM
- */
-#include "application.h"
+ 
+  File   application.c
+  Author AhmedElnozahy
+ 
+  Created on August 3, 2023, 454 PM
+ /*
+#include application.h
 
-
+/*
 Std_ReturnType ret = E_NOT_OK;
 uint8 keypad_val = 0 ;
 
@@ -18,34 +18,34 @@ int main(){
         ret = keypad_get_value(&keypad1 , &keypad_val);
         switch(keypad_val)
         {
-            case '1':
+            case '1'
                 ret = seven_segment_write_number(&seg1 , 1);
                 break;
-            case '2':
+            case '2'
                 ret = seven_segment_write_number(&seg1 , 2);
                 break;
-            case '3':
+            case '3'
                 ret = seven_segment_write_number(&seg1 , 3);
                 break;
-            case '4':
+            case '4'
                 ret = seven_segment_write_number(&seg1 , 4);
                 break;
-            case '5':
+            case '5'
                 ret = seven_segment_write_number(&seg1 , 5);
                 break;
-            case '6':
+            case '6'
                 ret = seven_segment_write_number(&seg1 , 6);
                 break;
-            case '7':
+            case '7'
                 ret = seven_segment_write_number(&seg1 , 7);
                 break;
-            case '8':
+            case '8'
                 ret = seven_segment_write_number(&seg1 , 8);
                 break;
-            case '9':
+            case '9'
                 ret = seven_segment_write_number(&seg1 , 9);
                 break;
-            default :
+            default 
                 break;
         }
 
@@ -57,4 +57,4 @@ void application_intialize(void){
     Std_ReturnType ret = E_NOT_OK;
     ecu_layer_intialize();
 
-}
+}*/

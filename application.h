@@ -10,17 +10,16 @@
 
 /* Section : Includes */
 #include "MCAL/GPIO/GPIO.h"
-#include "ECU/LED/ECU_LED.h"
-#include "ECU/BUTTON/ecu_button.h"
-#include "ECU/RELAY/ecu_Relay.h"
-#include "ECU/DC_MOTOR/ecu_dc_motor.h"
+#include "ECU/ecu_layer_init.h"
+
 
 /* Section: Macro Declarations */
 
 /* Section: Macro Functions Declarations */
 
 /* Section: Data Type Declarations */
-
+extern keypad_t keypad1;
+extern segment_pin_t seg1 ;
 /* Section: Function Declarations */
 void application_intialize(void);
 
