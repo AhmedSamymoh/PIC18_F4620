@@ -11,7 +11,7 @@ The driver is structured into the following layers:
 
 ### [ECU (Electronic Control Unit) Layer](ECU/)
 
-- [CHARACTER_LCD](ECU/LCD/): Character LCD display control module.
+- [LCD](ECU/LCD/): Character LCD display control module.
 - [KEYPAD](ECU/KEYPAD/): Keypad control module.
 - [DC_MOTOR](ECU/DC_MOTOR/): DC motor control module.
 - [RELAY](ECU/RELAY/): Relay control module.
