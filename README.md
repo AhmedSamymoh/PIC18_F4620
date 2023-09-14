@@ -16,6 +16,7 @@ The driver is structured into the following layers:
 - [LED](ECU/LED/): LED control module.
 - [RELAY](ECU/RELAY/): Relay control module.
 - [SEVEN_SEGMENTS](ECU/SEVEN_SEGMENTS/): Seven-segment display control module.
+- [KEYPAD](ECU/KEYPAD/): Keypad control module.
 
 ### Application Layer
 
