@@ -12,14 +12,14 @@
 #include "MCAL/GPIO/GPIO.h"
 #include "ECU/ecu_layer_init.h"
 
-
 /* Section: Macro Declarations */
 
 /* Section: Macro Functions Declarations */
 
 /* Section: Data Type Declarations */
-extern keypad_t keypad1;
-extern segment_pin_t seg1 ;
+extern lcd_4bit_t lcd_1;
+extern lcd_8bit_t lcd_2;
+//extern keypad_t ke
 /* Section: Function Declarations */
 void application_intialize(void);
 
