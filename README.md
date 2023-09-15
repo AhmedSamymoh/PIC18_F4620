@@ -23,11 +23,11 @@ The driver is structured into the following layers:
 
 - [application.c](application.c): Main application code file.
 - [application.h](application.h): Header file for the application code.
-- [Apps](Apps/): Directory containing application-specific modules.
+- [Apps](Apps/): Directory containing application-specific labs or mini-apps.
 
 
 ## Contributing
-Contributions to Employees_Data are welcome!
+Contributions are welcome!
 
 #### License
 licensed under the MIT License.
