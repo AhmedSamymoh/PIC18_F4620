@@ -1,10 +1,11 @@
 <div style="display: flex; justify-content: flex-end; align-items: center;">
-  <img src="Apps/Supplementary/PinDiagram.png" alt="Pin Diagram" width="200" style="margin-left: 20px;">
   <div>
     <h1>*PIC18_F4620*</h1>
     <p>My PIC18F4620 drivers journey. Effortlessly integrate microcontroller peripherals. Simplify development with clear documentation and modular code for smooth hardware interaction.</p>
   </div>
+  <img src="Apps/Supplementary/PinDiagram.png" alt="Pin Diagram" width="200" style="margin-left: 20px;">
 </div>
+
 ## Layered Architecture
 
 The driver is structured into the following layers:
