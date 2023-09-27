@@ -1,10 +1,10 @@
-<div style="display: flex; justify-content: flex-end; align-items: center;">
-  <div>
-    <h1>*PIC18_F4620*</h1>
-    <p>My PIC18F4620 drivers journey. Effortlessly integrate microcontroller peripherals. Simplify development with clear documentation and modular code for smooth hardware interaction.</p>
-  </div>
-  <img src="Apps/Supplementary/PinDiagram.png" alt="Pin Diagram" width="500" style="margin-left: 12000000px;">
+<div style="text-align: right; padding-right: 20px;">
+  <img src="Apps/Supplementary/PinDiagram.png" alt="Pin Diagram" width="600">
 </div>
+
+# *PIC18_F4620*
+My PIC18F4620 drivers journey. Effortlessly integrate microcontroller peripherals. Simplify development with clear documentation and modular code for smooth hardware interaction.
+
 
 ## Layered Architecture
 
