@@ -1,4 +1,4 @@
-<div style="text-align: right; padding-right: 20px;">
+<div style="text-align: right; padding-right: 90px;">
   <img src="Apps/Supplementary/PinDiagram.png" alt="Pin Diagram" width="200">
 </div>
 # *PIC18_F4620*
