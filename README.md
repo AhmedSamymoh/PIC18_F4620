@@ -1,8 +1,9 @@
+<div style="text-align: right; padding-right: 20px;">
+  <img src="Apps/Supplementary/PinDiagram.png" alt="Pin Diagram" width="200">
+</div>
 # *PIC18_F4620*
  my PIC18F4620 drivers journey. Effortlessly integrate microcontroller peripherals. Simplify development with clear documentation and modular code for smooth hardware interaction."
 
- ![Pin Diagram](Apps/Supplementary/PinDiagram.png)
- 
 ## Layered Architecture
 
 The driver is structured into the following layers:
