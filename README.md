@@ -1,6 +1,10 @@
 # *PIC18_F4620*
 My PIC18F4620 drivers journey. Effortlessly integrate microcontroller peripherals. Simplify development with clear documentation and modular code for smooth hardware interaction.
 
+<div style="text-align: right; padding-right: 30px;">
+  <img src="Apps/Supplementary/PinDiagram.png" alt="Pin Diagram" width="600">
+</div>
+
 ## Layered Architecture
 The driver is structured into the following layers:
 
@@ -20,10 +24,6 @@ The driver is structured into the following layers:
 - [application.c](application.c): Main application code file.
 - [application.h](application.h): Header file for the application code.
 - [Apps](Apps/): Directory containing application-specific labs or mini-apps.
-
-<div style="text-align: right; padding-right: 220px;">
-  <img src="Apps/Supplementary/PinDiagram.png" alt="Pin Diagram" width="600">
-</div>
 
 ## Contributing
 Contributions are welcome!
