@@ -81,20 +81,20 @@
 #if EXT_INTERRUPT_OnChange_FEATURE_ENABLE == INTERRUPT_FEATURE_ENABLE
 /*===================================================================*/
 /*A macro will @Enable External Interrupt , @RBx   */
-#define EXT_RBX_Enable()                  (INTCONbits_t.RBIE = 1)
+#define EXT_RBX_Enable()                  (INTCONbits.RBIE = 1)
 /*A macro will @Disable External Interrupt , @RBx   */
-#define EXT_RBX_Disable()                 (INTCONbits_t.RBIE = 0)
+#define EXT_RBX_Disable()                 (INTCONbits.RBIE = 0)
  
 /*A macro will @Clear Flag External Interrupt , RBx*/
-#define EXT_RBX_Clear_Flag()              (INTCONbits_t.RBIF = 0)
+#define EXT_RBX_Clear_Flag()              (INTCONbits.RBIF = 0)
 
 /*===================================================================*/
 #if INTERRUPT_PRIORITY_LEVELS_ENABLE == INTERRUPT_FEATURE_ENABLE
 
 /*A macro will @Set External Interrupt @RBx to be @HIGH Priority    */
-#define EXT_RBX_High_PrioritySet()        (INTCON2bits_t.RBIP = 1)
+#define EXT_RBX_High_PrioritySet()        (INTCON2bits.RBIP = 1)
 /*A macro will @Set External Interrupt @RBx to be @LOW Priority    */
-#define EXT_RBX_Low_PrioritySet()         (INTCON2bits_t.RBIP = 0)
+#define EXT_RBX_Low_PrioritySet()         (INTCON2bits.RBIP = 0)
 
 #endif
 
@@ -123,7 +123,8 @@ typedef struct{
 }interrupt_INTx_t;
 
 typedef struct{
-    void (*EXT_InterruptHandler)();
+    void (*EXT_InterruptHandler_HIGH)();
+    void (*EXT_InterruptHandler_LOW)();
     PIN_config_t                mcu_pin;
     interrupt_priority_config   priority;
 }interrupt_RBx_t;

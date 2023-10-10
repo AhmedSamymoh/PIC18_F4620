@@ -30,9 +30,9 @@
 #if INTERRUPT_PRIORITY_LEVELS_ENABLE == INTERRUPT_FEATURE_ENABLE
 /*===================================================================*/
 /*A macro will @Enable Interrupt Priority Level Feature  (RCON <7> IPEN)    */
-#define INTERRUPT_PriorityLevel_Enable()              (RCON.IPEN = 1)
+#define INTERRUPT_PriorityLevel_Enable()              (RCONbits.IPEN = 1 )
 /*A macro will @Enable Interrupt Priority Level Feature  (RCON <7> IPEN)    */
-#define INTERRUPT_PriorityLevel_Disable()             (RCON.IPEN = 0)
+#define INTERRUPT_PriorityLevel_Disable()             (RCONbits.IPEN = 0 )
 
 /*A macro will @Enable High Priority global interrupts (INTCON <7> GIEH)    */
 #define INTERRUPT_GlobleaInterrupt_HIGH_Enable()      (INTCONbits.GIEH = 1) 
