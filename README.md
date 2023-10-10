@@ -11,6 +11,7 @@ The driver is structured into the following layers:
 ### [MCAL (Microcontroller Abstraction Layer)](MCAL/)
 - [GPIO](MCAL/GPIO/): General-Purpose Input/Output module.
 - [Interrupt](MCAL/Interrupt/): Interrupt handling module.
+- [EEPROM](MCAL/EEPROM): EEPROM module.
 
 ### [ECU (Electronic Control Unit) Layer](ECU/)
 - [LCD](ECU/LCD/): Character LCD display control module.
