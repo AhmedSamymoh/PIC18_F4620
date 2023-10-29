@@ -27,7 +27,7 @@
 
 
 /* Section : Macro Functions Declarations */
-#define HWREG8(_address)                ( *((*volatile uint8)(_address)) )
+#define HWREG8(_address)                ( *((volatile uint8*)(_address)) )
 
 #define SET_BIT(REG , BIT_POSN)         (REG |=  (BIT_MASK << BIT_POSN))   
 #define CLR_BIT(REG , BIT_POSN)         (REG &= ~(BIT_MASK << BIT_POSN))   
