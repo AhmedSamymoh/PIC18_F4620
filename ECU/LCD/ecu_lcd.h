@@ -76,9 +76,9 @@ Std_ReturnType lcd_8bit_send_custom_char(const lcd_8bit_t *lcd , uint8 row , uin
                                           const uint8 _char[] , uint8 mem_pos);
 
 
-Std_ReturnType conv_byte_to_string(uint8 value , uint8 *str);
-Std_ReturnType conv_short_to_string(uint16 value , uint8 *str);
-Std_ReturnType conv_int_to_string(uint32 value , uint8 *str); 
+Std_ReturnType conv_uint8_to_string(uint8 value , uint8 *str);
+Std_ReturnType conv_uint16_to_string(uint16 value , uint8 *str);
+Std_ReturnType conv_uint32_to_string(uint32 value , uint8 *str); 
 
 
 #endif	/* ECU_LCD_H */

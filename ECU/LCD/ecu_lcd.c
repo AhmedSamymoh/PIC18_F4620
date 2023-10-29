@@ -298,7 +298,7 @@ Std_ReturnType lcd_8bit_send_custom_char(const lcd_8bit_t *lcd , uint8 row , uin
 
 /*****************************    Helper Functions    *********************************/
 
-Std_ReturnType conv_byte_to_string(uint8 value , uint8 *str){
+Std_ReturnType conv_uint8_to_string(uint8 value , uint8 *str){
     
     Std_ReturnType ret = E_OK;
     if((NULL == str) ){ //validation
@@ -310,7 +310,7 @@ Std_ReturnType conv_byte_to_string(uint8 value , uint8 *str){
     return ret;
 }
 
-Std_ReturnType conv_short_to_string(uint16 value , uint8 *str){
+Std_ReturnType conv_uint16_to_string(uint16 value , uint8 *str){
     Std_ReturnType ret = E_OK;
     if((NULL == str) ){ //validation
         ret = E_NOT_OK;
@@ -321,7 +321,7 @@ Std_ReturnType conv_short_to_string(uint16 value , uint8 *str){
     return ret;
 }
 
-Std_ReturnType conv_int_to_string(uint32 value , uint8 *str){
+Std_ReturnType conv_uint32_to_string(uint32 value , uint8 *str){
     Std_ReturnType ret = E_OK;
     if((NULL == str) ){ //validation
         ret = E_NOT_OK;
