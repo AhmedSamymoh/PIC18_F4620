@@ -11,6 +11,7 @@
 /* Section : Includes */
 #include "std_lib.h"
 #include "compiler.h"
+#include <string.h>
 
 /* Section: Data Type Declarations */
 typedef unsigned char   uint8;

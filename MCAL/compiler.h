@@ -9,6 +9,7 @@
 #define	COMPILER_H
 
 #include <xc.h>
+#include <pic18f4620.h>
 
 
 #endif	/* COMPILER_H */

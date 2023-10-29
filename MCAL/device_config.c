@@ -7,6 +7,8 @@
 
 #include "device_config.h"
 
+#define _XTAL_FREQ 8000000UL
+
 
 // PIC18F4620 Configuration Bit Settings
 
