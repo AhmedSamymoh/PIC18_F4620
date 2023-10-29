@@ -27,6 +27,7 @@ void RB4_ISR(uint8 RBx_Source);
 void RB5_ISR(uint8 RBx_Source);
 void RB6_ISR(uint8 RBx_Source);
 void RB7_ISR(uint8 RBx_Source);
+void ADC_ISR(void);
 
 
 

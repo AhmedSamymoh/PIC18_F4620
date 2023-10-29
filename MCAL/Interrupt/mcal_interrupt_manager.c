@@ -93,8 +93,12 @@ void __interrupt() InterruptManger(void){
         RB7_ISR(LOW);
     }else{ /* Nothing */ }
     
-/*=======================================================*/
-
+/*=============== ADC Module Interrupt ===============*/
+    if( (INTERRUPT_ENABLE == PIE1bits.ADIE) && (INTERRUPT_OCCUR == PIR1bits.ADIF ) ){
+        ADC_ISR();
+    }else{ /* Nothing */ }      
+    
+/*=======================================================*/   
 }
 
 
