@@ -43,6 +43,7 @@ Std_ReturnType button_read(const button_t *btn  ,button_state_t *btn_state ){
     }else
     {
         gpio_pin_read_logic(&(btn->button_pin) , &logic);
+        
         if(btn->button_active_t == BUTTON_ACTIVE_HIGH )
         {
             if(GPIO_HIGH == logic)

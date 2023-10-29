@@ -18,8 +18,9 @@
 
 /* Section: Data Type Declarations */
 typedef enum{
-    BUTTON_PRESSED,
-    BUTTON_RELEASED
+    BUTTON_RELEASED,
+    BUTTON_PRESSED
+    
 }button_state_t;
 typedef enum{
     BUTTON_ACTIVE_HIGH,
