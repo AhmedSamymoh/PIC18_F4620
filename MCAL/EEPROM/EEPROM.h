@@ -16,11 +16,15 @@
 /*---------------------- Section: Macro Declarations -----------------------*/
 #define ACCESS_FLASH_PROGRAM_MEMORY             1
 #define ACCESS_EEPROM_PROGRAM_MEMORY            0
+
 #define ACCESS_CONFIG_REGISTERS                 1
 #define ACCESS_EEPROM_FLASH_MEMORY              0
+
 #define ALLOW_WRITE_CYCLES_FLASH_EEPROM         1
 #define INHABIT_WRITE_CYCLES_FLASH_EEPROM       0
+
 #define INITIATE_DATA_EEPROM_WRITE_ERASE        1
+#define INITIATE_DATA_EEPROM_READ               0
 /*----------------- Section: Macro Functions Declarations ------------------*/
 
 /*-------------------- Section: Data Type Declarations -------------------- */
