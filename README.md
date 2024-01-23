@@ -31,7 +31,5 @@ The driver is structured into the following layers:
 ## Contributing
 Contributions are welcome!
 
-#### License
-licensed under the MIT License.
 
 
