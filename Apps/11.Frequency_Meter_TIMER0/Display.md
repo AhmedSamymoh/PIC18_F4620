@@ -1,5 +1,7 @@
 ## Timer0 - LAB:
-![Example Output](/Timer0_LAB.jpg)
+
+![Example Output](./Apps/11.FrequencyMeter_TIMER0/Timer0_LAB.jpg)
 
 ## FrequencyMeter:
-![Example Output](/FreqMeter.jpg)
+
+![Example Output](./Apps/11.FrequencyMeter_TIMER0/FreqMeter.jpg)
