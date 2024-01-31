@@ -1,5 +1,3 @@
-## ADC - LAB:
 ### Automated Fan:
 
-![Example Output](./Automated Fan.jpg)
-
+![Example Output](./Automated%20Fan.jpg)
