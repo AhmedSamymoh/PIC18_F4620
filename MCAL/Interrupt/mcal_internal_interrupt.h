@@ -35,6 +35,29 @@
 #endif 
 
 #endif 
+
+
+/*===================================================================*/
+#if TIMER0_INTERRUPT_FEATURE_ENABLE == INTERRUPT_FEATURE_ENABLE
+/*===================================================================*/
+
+/*A macro will @Disable Interrupt For TIMER0_Module */
+#define TIMER0_Interrupt_Disable()                    (INTCONbits.TMR0IE = 0)
+/*A macro will @Enable Interrupt For TIMER0_Module */
+#define TIMER0_Interrupt_Enable()                     (INTCONbits.TMR0IE = 1)
+/*A macro will @Clear Flag TIMER0_Interrupt */
+#define TIMER0_Interrupt_Flag_Clear()                 (INTCONbits.TMR0IF = 0)
+
+
+#if INTERRUPT_PRIORITY_LEVELS_ENABLE == INTERRUPT_FEATURE_ENABLE
+
+/*A macro will @Set TIMER0_Module Interrupt to be @HIGH Priority    */
+#define TIMER0_High_PrioritySet()                     (INTCON2bits.TMR0IP = 1)
+/*A macro will @Set TIMER0_Module Interrupt to be @LOW Priority    */
+#define TIMER0_Low_PrioritySet()                      (INTCON2bits.TMR0IP = 0)
+#endif 
+
+#endif 
 /* ------------- Section: Macro Functions Declarations ------------- */
 
 /* ------------- Section: Data Type Declarations ------------- */
