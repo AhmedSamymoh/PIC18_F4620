@@ -13,6 +13,7 @@ The driver is structured into the following layers:
 - [Interrupt](MCAL/Interrupt/): Interrupt handling module.
 - [EEPROM](MCAL/EEPROM): EEPROM module.
 - [ADC](MCAL/ADC): Analog-To-Digital Converter module.
+- [TIMER0](MCAL/TIMER0) : Timer0 Module.
 
 ### [ECU (Electronic Control Unit) Layer](ECU/)
 - [LCD](ECU/LCD/): Character LCD display control module.
